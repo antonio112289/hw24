@@ -169,8 +169,14 @@
   .table {
     display: table;
   }
+  .h-\[45px\] {
+    height: 45px;
+  }
   .h-\[100px\] {
     height: 100px;
+  }
+  .w-\[200px\] {
+    width: 200px;
   }
   .w-full {
     width: 100%;
@@ -187,12 +193,33 @@
   .flex-row {
     flex-direction: row;
   }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
+  .rounded-\[27px\] {
+    border-radius: 27px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#9B6D44\] {
+    background-color: #9B6D44;
+  }
   .bg-\[\#212121\] {
     background-color: #212121;
+  }
+  .text-\[white\] {
+    color: white;
   }
   .underline {
     text-decoration-line: underline;
