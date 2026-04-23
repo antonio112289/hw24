@@ -4,7 +4,10 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
     --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
   }
 }
 @layer base {
@@ -165,6 +168,9 @@
   .h-\[45px\] {
     height: 45px;
   }
+  .h-\[50px\] {
+    height: 50px;
+  }
   .h-\[100px\] {
     height: 100px;
   }
@@ -183,8 +189,14 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-\[20px\] {
     gap: 20px;
+  }
+  .gap-\[30px\] {
+    gap: 30px;
   }
   .rounded-\[27px\] {
     border-radius: 27px;
@@ -195,7 +207,17 @@
   .bg-\[\#212121\] {
     background-color: #212121;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-\[white\] {
     color: white;
+  }
+  .hover\:text-\[\#FFD700\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #FFD700;
+      }
+    }
   }
 }
